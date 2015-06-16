@@ -1,0 +1,14 @@
+<ion-view view-title="User">
+    <ion-content>
+        <h2>{{user.username}} - {{user.id}}</h2>
+        <ion-list>
+
+            <ion-item ng-show="userHasPOI" href="#/app/userpoilist/{{user.id}}">
+                Show user's POIs
+            </ion-item>
+            <ion-item ng-hide="userHasPOI">
+                {{"user_without_poi" | translate }}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

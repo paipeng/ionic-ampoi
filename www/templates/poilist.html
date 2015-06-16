@@ -1,0 +1,25 @@
+<ion-view view-title="POI Lists">
+    <ion-content  on-infinite-scroll="loadMore()">
+        <ion-list>
+            <ion-item class="my-item" collection-repeat="poi in POIs"
+                      collection-item-width="'100%;'"
+                      collection-item-height="getItemHeight(poi, $index)"
+                      ng-style="{height: getItemHeight(poi, $index)}">
+                        {{poi.id}} - {{poi.name}}
+                      </ion-item>
+            <!--
+            <ion-item
+                    ng-repeat="poi in POIs"
+                    href="#/app/poilist/{{poi.id}}">
+                {{poi.id}} - {{poi.name}}
+            </ion-item>
+
+                    -->
+        </ion-list>
+            <ion-infinite-scroll
+                on-infinite="loadMore()"
+                distance="1%">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
+

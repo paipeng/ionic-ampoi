@@ -1,0 +1,33 @@
+{
+  "name": "poi",
+  "plural": "pois",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "geopoint": {
+      "type": "geopoint",
+      "required": true
+    },
+    "type": {
+      "type": "number",
+      "required": true
+    },
+    "created": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "amUser": {
+      "type": "belongsTo",
+      "model": "AmUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

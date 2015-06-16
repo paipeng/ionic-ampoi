@@ -1,0 +1,27 @@
+
+<ion-view view-title="{{'menu_title_map' | translate}}">
+    <ion-content>
+        <!--
+        <ui-gmap-google-map id="map" center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+        -->
+        <div id="map" data-tap-disabled="true"></div>
+
+        <!-- map directive
+        <app-map style="height:200px;margin:12px;box-shadow:0 3px 25px black;"
+                 center="basel"
+                 zoom="15"
+                 markers="whoiswhere"
+                >
+        </app-map>
+        -->
+
+    </ion-content>
+    <ion-footer-bar class="bar-dark">
+        <div class="buttons">
+            <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate">Find Me</a>
+            <a ng-click="filterUser()" class="button button-icon icon ion-levels" ng-show="loginUser"></a>
+            <a ng-click="takePhoto()" class="button button-icon icon ion-camera" ng-show="loginUser"></a>
+        </div>
+    </ion-footer-bar>
+</ion-view>
+

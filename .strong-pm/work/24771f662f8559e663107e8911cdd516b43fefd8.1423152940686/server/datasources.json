@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "loopback-server",
+    "username": "node_am",
+    "password": "node_2015",
+    "name": "mysql",
+    "connector": "mysql"
+  }
+}

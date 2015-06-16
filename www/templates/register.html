@@ -1,0 +1,35 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">{{"menu_title_register" | translate}}</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeRegistration()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form novalidate="novalidate" name="registerForm"  ng-submit="doRegister()">
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-ios7-person"></i>
+                    <input type="text" placeholder="Username" name="username" ng-model="registration.username" required>
+                </label>
+                <label class="item item-input">
+                    <i class="icon ion-email"></i>
+                    <input type="email" placeholder="E-mail" name="email" ng-model="registration.email" required>
+                </label>
+                <label class="item item-input">
+                    <i class="icon ion-ios7-locked"></i>
+                    <input type="password" placeholder="Password" name="password" ng-model="registration.password"
+                           required>
+                </label>
+            </div>
+            <div class="padding">
+
+                <button ng-disabled="!registerForm.$valid"
+                        class="button icon ion-compose button-block button-outline button-royal">
+                    Register
+                </button>
+            </div>
+        </form>
+    </ion-content>
+
+</ion-modal-view>

@@ -1,0 +1,9 @@
+<ion-view view-title="User POI Lists">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="poi in userPOIs" href="#/app/poilist/{{poi.id}}">
+                {{poi.name}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

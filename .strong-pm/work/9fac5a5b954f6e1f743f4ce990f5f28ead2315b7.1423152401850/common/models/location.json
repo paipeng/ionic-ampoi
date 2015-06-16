@@ -1,0 +1,27 @@
+{
+  "name": "location",
+  "plural": "locations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "lat": {
+      "type": "geopoint",
+      "required": true
+    },
+    "long": {
+      "type": "geopoint",
+      "required": true
+    },
+    "comment": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

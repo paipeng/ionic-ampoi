@@ -1,0 +1,11 @@
+{
+  "name": "AmUser",
+  "plural": "AmUsers",
+  "base": "User",
+  "idInjection": true,
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
